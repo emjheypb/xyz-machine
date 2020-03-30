@@ -26,6 +26,14 @@ class ViewController: UIViewController {
 
     func updateXYZ(data: CMAccelerometerData?, error: Error?) {
         guard let accelerometerData = data else { return }
+        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 1
+        formatter.maximumFractionDigits = 1
+        
+        xLbl.text = "X: \(formatter.string(for: accelerometerData.acceleration.x)!)"
+        yLbl.text = "Y: \(formatter.string(for: accelerometerData.acceleration.y)!)"
+        zLbl.text = "Z: \(formatter.string(for: accelerometerData.acceleration.z)!)"
     }
 }
 
