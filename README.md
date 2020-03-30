@@ -3,4 +3,4 @@ Accelerometer Demo
 
 - Core Motion - motion manager - accelerometer (ViewController.swift)
 
-<img src="Screenshot.gif" width=400>
+<img src="Screenshot.gif" width=250>
