@@ -1,0 +1,2 @@
+# xyz-machine
+Accelerometer Demo
